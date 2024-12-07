@@ -332,7 +332,9 @@ hr{
 
 
 img{
-    position: absolute;
+    position: fixed;
+    top: 34px;
+    filter: drop-shadow(-9px 0px 0px var(--active));
 }
 
 .contact{
