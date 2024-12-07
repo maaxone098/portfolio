@@ -8,7 +8,7 @@
 
 html{
     scroll-behavior: smooth;
-    background-image: url(/images/back-1.jpg);
+    background-image: url(/back-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     user-select: none;
