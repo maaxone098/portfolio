@@ -26,6 +26,7 @@ body{
 
 
 nav{
+    
     width: 100%;
     height: 50px;
     align-content: center;
@@ -390,7 +391,7 @@ input:focus, input:active{
     
 }
 
-#name:focus{
+#name{
     text-transform: uppercase;
 }
 
