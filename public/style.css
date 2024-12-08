@@ -387,6 +387,11 @@ input::placeholder{
 input:focus, input:active{
     border: none;
     background-color: rgba(112, 112, 112, 0.363);
+    
+}
+
+#name:focus{
+    text-transform: uppercase;
 }
 
 #contact{
