@@ -12,6 +12,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     user-select: none;
+    background-color: black;
     overflow: clip;
 }
 
