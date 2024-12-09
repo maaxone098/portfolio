@@ -12,8 +12,13 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     user-select: none;
+<<<<<<< HEAD
     overflow-y: auto;
     background-color: black;
+=======
+    background-color: black;
+    overflow: clip;
+>>>>>>> 71e561b8bb6bfff4fe8c6ebf31eac07aad1d91f9
 }
 
 body{
@@ -22,7 +27,8 @@ body{
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    background-color: black;
 }
 
 
@@ -59,11 +65,6 @@ a{
     position: relative;
 }
 
-li a:hover{
-    color: var(--active);
-    
-}
-
 li a::before {
     content: "";
     position: absolute;
@@ -77,16 +78,14 @@ li a::before {
     transform: skewY(-10deg);
 }
 
-li a:hover::before{
-    width: 100%;
-}
-
 li a:hover{
     color: black;
     font-weight: bold;
 }
 
-
+li a:hover::before{
+    width: 100%;
+}
 
 li:nth-of-type(3){
     flex-grow: 1;
