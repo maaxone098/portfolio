@@ -62,8 +62,8 @@ a{
 }
 
 li a:hover{
-    color: var(--active);
-    
+    color: black;
+    font-weight: bold;
 }
 
 li a::before {
@@ -82,13 +82,6 @@ li a::before {
 li a:hover::before{
     width: 100%;
 }
-
-li a:hover{
-    color: black;
-    font-weight: bold;
-}
-
-
 
 li:nth-of-type(3){
     flex-grow: 1;
