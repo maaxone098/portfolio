@@ -61,11 +61,6 @@ a{
     position: relative;
 }
 
-li a:hover{
-    color: black;
-    font-weight: bold;
-}
-
 li a::before {
     content: "";
     position: absolute;
@@ -77,6 +72,11 @@ li a::before {
     transition: all .5s;
     z-index: -1;
     transform: skewY(-10deg);
+}
+
+li a:hover{
+    color: black;
+    font-weight: bold;
 }
 
 li a:hover::before{
