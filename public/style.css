@@ -12,13 +12,8 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     user-select: none;
-<<<<<<< HEAD
-    overflow-y: auto;
-    background-color: black;
-=======
     background-color: black;
     overflow: clip;
->>>>>>> 71e561b8bb6bfff4fe8c6ebf31eac07aad1d91f9
 }
 
 body{
