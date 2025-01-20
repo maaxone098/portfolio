@@ -10,6 +10,11 @@
     <script src="/script.js"></script>
 </head>
 <body background="/images/back-1.jpg">
+    <div id="preloader">
+        <div class="spinner"></div>
+        <p>please wait...</p>
+    </div>
+    <div id="content">
     <nav>
         <ul>
             <li><a href="index.html" class="link">home</a></li>
@@ -36,5 +41,24 @@
             <a href="https://www.instagram.com/_s.u.n.d.a.r._.s_/?__pwa=1"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
+    </div>
+    <script>
+        // script.js
+        window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        const content = document.getElementById("content");
+    
+      // Add a delay (e.g., 3 seconds)
+        setTimeout(() => {
+        // Hide the preloader
+        preloader.style.display = "none";
+    
+        // Show the main content
+        content.style.display = "block";
+        },); // 3000ms = 3 seconds
+        });
+        
+    
+        </script>
 </body>
 </html>

@@ -11,6 +11,11 @@
 
 </head>
 <body>
+    <div id="preloader">
+        <div class="spinner"></div>
+        <p>please wait...</p>
+    </div>
+    <div id="content">
     <nav>
         <ul>
             <li><a href="index.html" class="link">home</a></li>
@@ -33,6 +38,7 @@
         <a href="mailto:sundar.sh18@gmail.com"><i class="fa-regular fa-envelope"></i></a>
         <a href="https://www.instagram.com/_s.u.n.d.a.r._.s_/?__pwa=1"><i class="fa-brands fa-instagram"></i></a>
     </div>
+</div>
     <script>
 const form = document.getElementById('contactForm');
 form.addEventListener('submit', async (event) => {
@@ -97,6 +103,24 @@ if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)){
 }
 return true;
 }
+
+
+    // script.js
+    window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    const content = document.getElementById("content");
+
+  // Add a delay (e.g., 3 seconds)
+    setTimeout(() => {
+    // Hide the preloader
+    preloader.style.display = "none";
+
+    // Show the main content
+    content.style.display = "block";
+    },); // 3000ms = 3 seconds
+    });
+    
+
     </script>
 </body>
 </html>

@@ -32,6 +32,7 @@ nav{
     align-content: center;
     border-radius: 12px;
     margin:20px;
+    z-index: 5;
 }
 
 ul{
@@ -60,7 +61,11 @@ a{
 
 li a:hover{
     color: var(--active);
-    
+}
+
+li a:hover{
+    color: black;
+    font-weight: bold;
 }
 
 li a::before {
@@ -80,10 +85,7 @@ li a:hover::before{
     width: 100%;
 }
 
-li a:hover{
-    color: black;
-    font-weight: bold;
-}
+
 
 
 
@@ -406,3 +408,133 @@ input:focus, input:active{
 .form > button{
     margin: 0;
 }
+
+@media only screen and (max-width:720px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100svh;
+        width: 720px;
+    }
+
+    ul{
+        display: flex;
+        justify-content: left;
+        gap: 50px;
+    }
+    
+    li:nth-of-type(3){
+        flex-grow: 0;
+    }
+
+
+    li{
+        padding-left: 0;
+    }
+
+    .container{
+        position: static;
+        height: fit-content;
+        
+    }
+
+    .content-1 > h1{
+        font-size: 5rem;
+    }
+
+    .content-1{
+        margin-left: 40px;
+        
+    }
+
+    .content-1 > p{
+        margin-top: 25px;
+    }
+
+    h1 span::before{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 100px;
+        background-color: #e99820;
+        left: -30px;
+        top: 0;
+        border-radius: 3px;
+    }
+    .icons{
+        
+        margin: 0 0;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        overflow: hidden;
+
+        bottom: 40px; 
+    }
+}
+
+#preloader{
+    width: 100%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preloader > p{
+    font-family: "lato";
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#preloader.hidden {
+    opacity: 0;
+    pointer-events: none; /* Prevent interaction after fading */
+  }
+
+.spinner{
+    border: 6px solid var(--active);
+    border-top: 6px solid var(--grey);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-bottom: 120px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/* .spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
