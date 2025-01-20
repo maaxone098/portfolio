@@ -8,10 +8,11 @@
 
 html{
     scroll-behavior: smooth;
-    background-image: url(images/back-1.jpg);
+    /* background-image: url(images/back-1.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     user-select: none;
+    background-color: black;
     overflow: clip;
 }
 
@@ -21,17 +22,18 @@ body{
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    background-color: black;
 }
 
 
 nav{
-    
     width: 100%;
     height: 50px;
     align-content: center;
     border-radius: 12px;
     margin:20px;
+    z-index: 5;
     z-index: 5;
 }
 
@@ -294,6 +296,7 @@ hr{
 .mail{
     color: var(--grey);
     text-transform: lowercase;
+    z-index: 1;
 }
 
 .mail::before{
@@ -315,10 +318,9 @@ hr{
 }
 
 .mail:hover::before{
-    
     transition: all .5s;
     width: 110%;
-    
+    z-index: -1;
 }
 
 .outer{
