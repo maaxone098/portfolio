@@ -34,7 +34,6 @@ nav{
     border-radius: 12px;
     margin:20px;
     z-index: 5;
-    z-index: 5;
 }
 
 ul{
@@ -59,16 +58,10 @@ a{
     font-style: normal;
     transition: transform 0.4s;
     position: relative;
+    z-index: 3;
 }
 
-li a:hover{
-    color: var(--active);
-}
 
-li a:hover{
-    color: black;
-    font-weight: bold;
-}
 
 li a::before {
     content: "";
@@ -83,10 +76,15 @@ li a::before {
     transform: skewY(-10deg);
 }
 
-li a:hover::before{
-    width: 100%;
+li a:hover{
+    color: black;
+    font-weight: bold;
 }
 
+li a:hover::before{
+    width: 100%;
+    z-index: -1;
+}
 
 
 
@@ -98,6 +96,7 @@ li:nth-of-type(3){
 li:nth-of-type(4){
     padding-right: 70px;
 }
+
 
 .container{
     position: relative;

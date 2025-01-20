@@ -59,10 +59,10 @@ a{
     position: relative;
 }
 
-li a:hover{
+/* li a:hover{
     color: var(--active);
     
-}
+} */
 
 li a::before {
     content: "";
