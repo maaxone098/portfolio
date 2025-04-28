@@ -42,6 +42,13 @@ ul{
     
 }
 
+.projects li{
+    list-style: decimal;
+    margin-left: 65px ;
+    padding-left: 0px;
+    
+}
+
 li{
     list-style: none;
     margin: 0;
@@ -49,6 +56,15 @@ li{
 }
 
 a{
+    color: var(--grey);
+    text-decoration: none;
+
+    &:hover{
+        color: white;
+    }
+}
+
+li a{
     color: var(--grey);
     text-decoration: none;
     text-transform: capitalize;
