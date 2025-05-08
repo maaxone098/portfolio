@@ -194,13 +194,14 @@ span{
 @media only screen and (max-width:500px) {
     
     
+
     body{
         
         display: flex;
-        overflow-x: hidden;
+        overflow: hidden;
         flex-direction: column;
-        width: 496px;
-        height: 100lvh;
+        width: 100%;
+        height: fit-content;
     }
     
     header{
@@ -209,13 +210,44 @@ span{
 
     .container{
         margin-left: 10px;
+        overflow-wrap: break-word;
+        width: 100%;
+    }
+
+    .section ul,p{
+        width: 460px;
+        
+    }
+
+    nav{
+        width: 393px;
     }
 
     #content{
         overflow-wrap: break-word;
         margin: 0;
         padding: 0;
-        width: 496px;
-        height: 913px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .contact-info li, .skills-list li, .education li, .projects li{
+        padding-left: 10px;
+        
+    }
+
+    .projects li{
+        margin-left: 20px;
+    }
+
+    .footer{
+        padding: 1px 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .footer p{
+        margin-bottom: 5px;
+        padding-left: 12px ;
     }
 }
