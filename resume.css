@@ -32,14 +32,16 @@ nav{
     align-content: center;
     border-radius: 12px;
     margin:20px;
+    margin-bottom: 0px;
     z-index: 5;
+    box-sizing: border-box;
 }
 
 ul{
     display: flex;
     justify-content: space-between;
     padding: 0;
-    
+    margin-bottom: 0px;
 }
 
 .projects li{
@@ -169,7 +171,14 @@ span{
 
 .projects > li{
     text-transform: none;
+    
 }
+
+.projects span{
+    text-decoration: underline;
+}
+
+
 
 .footer{
     background-color: var(--active);
@@ -179,4 +188,34 @@ span{
     font-weight: 800;
     text-transform: none;
     margin-top: 100px;
+}
+
+
+@media only screen and (max-width:500px) {
+    
+    
+    body{
+        
+        display: flex;
+        overflow-x: hidden;
+        flex-direction: column;
+        width: 496px;
+        height: 100lvh;
+    }
+    
+    header{
+        margin-left: 10px ;
+    }
+
+    .container{
+        margin-left: 10px;
+    }
+
+    #content{
+        overflow-wrap: break-word;
+        margin: 0;
+        padding: 0;
+        width: 496px;
+        height: 913px;
+    }
 }
